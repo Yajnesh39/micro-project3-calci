@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./calc.css" />
+<script src="./script.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calc</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="frame1">
+                <input class="indisp" type="text" id="result" value="" readonly />
+            </div>
+            <div class="frame2">
+                <button class="same" onclick="appendNumber(7)">7</button>
+                <button class="same" onclick="appendNumber(8)">8</button>
+                <button class="same" onclick="appendNumber('9')">9</button>
+                <button class="del" onclick="deleteLast()">DEL</button>
+                <button class="same" onclick="appendNumber('4')">4</button>
+                <button class="same" onclick="appendNumber('5')">5</button>
+                <button class="same" onclick="appendNumber('6')">6</button>
+                <button class="same" onclick="appendOperator('+')">+</button>
+                <button class="same" onclick="appendNumber('1')">1</button>
+                <button class="same" onclick="appendNumber('2')">2</button>
+                <button class="same" onclick="appendNumber('3')">3</button>
+                <button class="same" onclick="appendMinus('-')">-</button>
+                <button class="same" onclick="appendDot()">.</button>
+                <button class="same" onclick="appendNumber('0')">0</button>
+                <button class="same" onclick="appendOperator('/')">/</button>
+                <button class="same" onclick="appendOperator('*')">x</button>
+                <button class="rst" onclick="clearResult()">RESET</button>
+                <button class="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </body>
+</html>
